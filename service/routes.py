@@ -71,7 +71,7 @@ def create_products():
     message = product.serialize()
 
     # location_url = url_for("get_products", product_id=product.id, _external=True)
-    location_url = "/"  # delete once READ is implemented
+    location_url = "/"  
     return jsonify(message), status.HTTP_201_CREATED, {"Location": location_url}
 
 
